@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/fecab1dd9a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header " data-aos="fade-down">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE ENGINEERING</p>
+                <h1>Hello, I am <span>Phat Le</span><br> from Vietnam</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <img src="pictures/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Phat Le, a 22-year-old Computer Science enthusiast currently studying at the prestigious University of Texas at Dallas. My passion lies in the realm of web development, where I specialize in crafting intuitive and visually appealing User Interfaces (UI). I firmly believe that every failure is a stepping stone towards success, guiding me through my learning journey.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Beyond academia, I also serve as an adept manager at a bustling boba store. Through effective leadership, I ensure seamless operations and deliver exceptional customer service, honing my organizational skills and fostering collaborative environments.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>
+                                <span>Proficiencies</span>
+                                <ul>
+                                    <li>Python, C/C++, Java, HTML, CSS, Javascript, Reactjs, Chart.js </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Other Knowledge</span>
+                                <ul>
+                                    <li>SQL, Tailwind, Bootstrap, GitHub, MS Office, Haskell, Linux, PowerApps, Firebase, Google Maps API, PowerBI                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Soft Skills</span>
+                                <ul>
+                                    <li>Problem Solving, Analysis, Teamwork, Critical Thinking</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Fall 2022 - Expected Fall 2025</span>
+                                <ul>
+                                    <li>University of Texas at Dallas</li>
+                                </ul>
+                            <li>
+                                <span>2020 - 2022</span>
+                                <ul>
+                                    <li>Collin College</li>
+                                </ul>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul class = "nested-list">
+                            <li>
+                                <span class = "headers">Software Engineer Intern - Dynamics, Itechwx</span>
+                                    <ul>
+                                        <li>Developed and implemented Dynamics 365 Web API with RESTful services to support CRUD operations, leading to an 80% reduction in average solution time. </li>
+                                        <li>Utilized Tailwind CSS and Bootstrap to deliver responsive web interfaces, collaborating with cross-functional teams to analyze and optimize user experiences. </li>
+                                    <li>Leveraged deep knowledge of Dynamics modules and Dataverse to resolve complex issues, achieving a 25% reduction in customer-reported problems. </li>
+                                    </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Services Section -->
+<div id="services" data-aos="fade-up">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="service-list">
+            <div data-aos="flip-left">
+                <i class="fa-solid fa-cloud"></i>
+                <h2>
+                    <a href="https://github.com/ngocphatle17/javascript-weather.git" target="_blank" class="project-link">Weather App</a>
+                </h2>
+                <p>A weather app made using OpenWeatherMap API in Vanilla JavaScript, providing current weather and additional information.</p>
+            </div>
+            <div data-aos="flip-right">
+                <i class="fa-solid fa-house"></i>
+                <h2>
+                    <a href="https://github.com/ngocphatle17/House-Pricing-Prediction.git" target="_blank" class="project-link">House Pricing Prediction</a>
+                </h2>
+                <p>Built a house price prediction model using RandomForestRegressor, optimized with GridSearchCV.</p>
+            </div>
+            <div data-aos="flip-up">
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>
+                    <a href="https://github.com/ngocphatle17/SecureBank.git" target="_blank" class="project-link">SecureBank</a>
+                </h2>
+                <p>Developed SecureBank with Firebase for authentication, Chart.js for payment data visualization, and Google Maps API for branch location, using Tailwind CSS and Bootstrap for responsive UI.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <div id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pxl220003@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>(972) 876-2144</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ngocphatle17"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_nphatle/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/simon-le-a49542215"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ngocphatle17"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="pictures/my-cv.pdf" class="btn btn2">View Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Phat Le</p>
+        </div>
+    </div>
+
+    <!-- AOS and Portfolio JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/portfolio.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+</body>
+
+</html>
